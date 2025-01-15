@@ -45,7 +45,7 @@ export default function MainProvider({children}){
 
     return (
         <>
-            {loading ? <div><TailSpin/></div> : 
+            {loading ? <div className="h-[100vh] flex justify-center items-center "><TailSpin/></div> : 
                                                 <MainContext.Provider value={{isAuthenticated,login,logout}}>
                                                     {children}
                                                 </MainContext.Provider>
