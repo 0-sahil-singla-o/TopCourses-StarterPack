@@ -17,7 +17,7 @@ export default function Navbar({isLoggedIn,setLoggedIn}){
     // Logout function-->
 
     function Logout(){
-        fetch("http://localhost:8080/api/logout",{
+        fetch("https://topcourses-starterpack.onrender.com/api/logout",{
             method:"GET",
             credentials:"include"
         })

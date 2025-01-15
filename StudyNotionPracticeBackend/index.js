@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended:false}));
 
 // Allow requests from specific origins
 app.use(cors({
-    origin: 'http://localhost:5173', // Replace with your frontend URL
+    origin: 'https://topcourses-starterpack-1.onrender.com', // Replace with your frontend URL
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS', // Allowed HTTP methods
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true // Include credentials if necessary

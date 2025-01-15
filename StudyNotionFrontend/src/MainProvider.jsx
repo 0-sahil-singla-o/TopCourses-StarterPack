@@ -9,7 +9,7 @@ export default function MainProvider({children}){
     const [loading,setloading]=useState(true);
    
     useEffect(()=>{
-        fetch("http://localhost:8080/api/isAuthenticated",{
+        fetch("https://topcourses-starterpack.onrender.com/api/isAuthenticated",{
             method:"GET",
             credentials:"include"
         })
